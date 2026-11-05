@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wisco Fleet Works | Mobile Fleet Maintenance &amp; Repair in Madison, WI</title>
+  <meta name="description" content="Mobile mechanic for commercial vans and step vans in Madison, Fitchburg and DeForest, WI. Preventive maintenance, brakes, electrical and diagnostics done at your lot or depot. Call or text (608) 895-1054.">
+  <link rel="canonical" href="https://wiscofleetworks.com/">
+  <meta name="theme-color" content="#13233f">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://wiscofleetworks.com/">
+  <meta property="og:title" content="Wisco Fleet Works | Mobile Fleet Maintenance &amp; Repair">
+  <meta property="og:description" content="We fix your vans where they're parked. Mobile maintenance and repair for fleets in Madison, Fitchburg, DeForest and the surrounding area.">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "Wisco Fleet Works LLC",
+    "url": "https://wiscofleetworks.com/",
+    "telephone": "+1-608-895-1054",
+    "email": "wiscofleetworks@gmail.com",
+    "description": "Mobile fleet maintenance and repair for commercial vans and step vans.",
+    "areaServed": [
+      { "@type": "City", "name": "Madison, WI" },
+      { "@type": "City", "name": "Fitchburg, WI" },
+      { "@type": "City", "name": "DeForest, WI" }
+    ],
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "07:00",
+      "closes": "23:00"
+    }]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --navy: #13233f;
+      --navy-deep: #0b1628;
+      --orange: #e8641b;
+      --orange-dark: #c9520f;
+      --paper: #f5f2eb;
+      --card: #ffffff;
+      --line: #ddd6c8;
+      --ink: #15202f;
+      --muted: #4b5563;
+      --on-navy: #c9d3e3;
+      --radius: 6px;
+      --head: "Oswald", "Arial Narrow", sans-serif;
+      --body: "Manrope", system-ui, -apple-system, sans-serif;
+      --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+    body { margin: 0; font-family: var(--body); font-size: 17px; line-height: 1.6; color: var(--ink); background: var(--paper); -webkit-font-smoothing: antialiased; }
+    img, svg { display: block; }
+    a { color: inherit; }
+    h1, h2, h3 { font-family: var(--head); font-weight: 600; line-height: 1.1; margin: 0; letter-spacing: .01em; }
+    p { margin: 0; }
+    .wrap { width: min(1120px, 100% - 40px); margin-inline: auto; }
+    .icon { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+    .label { font-family: var(--mono); font-size: 12px; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; }
+    .todo { background: #fff3c4; color: #7a4a00; border: 1px dashed #d99a00; border-radius: 3px; padding: 0 4px; font-style: normal; }
+    :focus-visible { outline: 3px solid var(--orange); outline-offset: 2px; }
+
+    /* Buttons */
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 14px 22px; border-radius: var(--radius); font-family: var(--head); font-size: 18px; font-weight: 600; letter-spacing: .03em; text-decoration: none; border: 2px solid transparent; cursor: pointer; transition: background .15s, border-color .15s, color .15s; }
+    .btn-primary { background: var(--orange); color: #fff; }
+    .btn-primary:hover { background: var(--orange-dark); }
+    .btn-ghost { border-color: rgba(255,255,255,.35); color: #fff; }
+    .btn-ghost:hover { border-color: #fff; background: rgba(255,255,255,.06); }
+    .btn-dark { background: var(--navy); color: #fff; }
+    .btn-dark:hover { background: var(--navy-deep); }
+
+    /* Header */
+    .stripe { height: 6px; background: repeating-linear-gradient(-45deg, var(--orange) 0 14px, var(--navy) 14px 28px); }
+    header { position: sticky; top: 0; z-index: 30; background: var(--navy); color: #fff; border-bottom: 1px solid rgba(255,255,255,.08); }
+    .nav { display: flex; align-items: center; justify-content: space-between; height: 72px; gap: 24px; }
+    .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+    .brand-name { font-family: var(--head); font-size: 22px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; line-height: 1; }
+    .brand-name span { color: var(--orange); }
+    .nav-links { display: flex; align-items: center; gap: 28px; }
+    .nav-links a { text-decoration: none; font-size: 15px; font-weight: 600; color: var(--on-navy); }
+    .nav-links a:hover { color: #fff; }
+    .nav-call { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; font-family: var(--head); font-size: 18px; font-weight: 600; color: #fff; background: var(--orange); padding: 9px 16px; border-radius: var(--radius); }
+    .nav-call:hover { background: var(--orange-dark); }
+
+    /* Hero */
+    .hero { background: var(--navy); color: #fff; padding: 72px 0 88px; position: relative; overflow: hidden; }
+    .hero::after { content: ""; position: absolute; inset: 0; background: radial-gradient(700px 400px at 85% 20%, rgba(232,100,27,.14), transparent 70%); pointer-events: none; }
+    .hero-grid { position: relative; z-index: 1; display: grid; grid-template-columns: 1.25fr .9fr; gap: 56px; align-items: center; }
+    .hero .label { color: var(--orange); display: inline-flex; align-items: center; gap: 10px; }
+    .hero .label::before { content: ""; width: 28px; height: 2px; background: var(--orange); }
+    .hero h1 { font-size: clamp(44px, 6.4vw, 76px); font-weight: 700; text-transform: uppercase; margin: 18px 0 22px; }
+    .hero h1 em { font-style: normal; color: var(--orange); }
+    .hero-lede { font-size: 19px; color: var(--on-navy); max-width: 34em; }
+    .hero-ctas { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
+    .hero-note { margin-top: 18px; font-size: 14px; color: #8fa0bb; }
+
+    /* Work-order card */
+    .ticket { background: var(--card); color: var(--ink); border-radius: var(--radius); box-shadow: 0 30px 60px -20px rgba(0,0,0,.55); overflow: hidden; }
+    .ticket-head { display: flex; justify-content: space-between; align-items: center; padding: 14px 20px; background: #eef1f6; border-bottom: 1px dashed #b8c2d3; }
+    .ticket-head .label { color: var(--navy); }
+    .status { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700; color: #2f6b3a; }
+    .status.closed { color: #8a5a00; }
+    .status.closed .dot { background: #d99a00; box-shadow: 0 0 0 4px rgba(217,154,0,.15); }
+    .ticket-head .dot { width: 9px; height: 9px; border-radius: 50%; background: #2f9e44; box-shadow: 0 0 0 4px rgba(47,158,68,.15); }
+    .ticket dl { margin: 0; padding: 6px 20px 8px; }
+    .ticket .row { display: grid; grid-template-columns: 110px 1fr; gap: 12px; padding: 13px 0; border-bottom: 1px solid #eceae4; }
+    .ticket .row:last-child { border-bottom: 0; }
+    .ticket dt { font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: #6b7280; padding-top: 3px; }
+    .ticket dd { margin: 0; font-weight: 600; }
+    .ticket-foot { padding: 16px 20px 20px; }
+    .ticket-foot .btn { width: 100%; }
+
+    /* Sections */
+    section.block { padding: 88px 0; }
+    .section-head { max-width: 640px; margin-bottom: 44px; }
+    .section-head .label { color: var(--orange-dark); }
+    .section-head h2 { font-size: clamp(34px, 4.4vw, 48px); text-transform: uppercase; margin: 10px 0 14px; }
+    .section-head p { color: var(--muted); font-size: 18px; }
+
+    /* Steps */
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border: 1px solid var(--line); border-radius: var(--radius); background: var(--card); counter-reset: step; }
+    .step { padding: 30px 28px 32px; border-right: 1px solid var(--line); }
+    .step:last-child { border-right: 0; }
+    .step::before { counter-increment: step; content: "0" counter(step); display: block; font-family: var(--head); font-size: 44px; font-weight: 700; color: var(--orange); line-height: 1; margin-bottom: 18px; }
+    .step h3 { font-size: 23px; margin-bottom: 8px; }
+    .step p { color: var(--muted); }
+
+    /* Services */
+    .services { background: var(--card); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .svc-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 56px; }
+    .svc { display: grid; grid-template-columns: 44px 1fr; gap: 16px; padding: 22px 0; border-top: 1px solid var(--line); }
+    .svc-icon { width: 44px; height: 44px; border-radius: var(--radius); background: var(--navy); color: #fff; display: grid; place-items: center; }
+    .svc h3 { font-size: 21px; margin-bottom: 4px; }
+    .svc p { color: var(--muted); font-size: 16px; }
+    .svc-cta { text-decoration: none; }
+    .svc-cta .svc-icon { background: var(--orange); }
+    .svc-cta:hover h3 { color: var(--orange-dark); }
+
+    /* Vehicles + why */
+    .split { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
+    .spec { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+    .spec-head { background: var(--navy); color: #fff; padding: 14px 22px; }
+    .spec ul { list-style: none; margin: 0; padding: 0; }
+    .spec li { display: flex; align-items: center; gap: 14px; padding: 16px 22px; border-top: 1px solid #eceae4; font-weight: 600; }
+    .spec li:first-child { border-top: 0; }
+    .spec li .icon { color: var(--orange); }
+    .why { display: grid; gap: 22px; }
+    .why-item { display: grid; grid-template-columns: 28px 1fr; gap: 14px; }
+    .why-item .icon { color: var(--orange); width: 26px; height: 26px; margin-top: 2px; }
+    .why-item h3 { font-size: 21px; margin-bottom: 4px; }
+    .why-item p { color: var(--muted); }
+
+    /* Area band */
+    .area { background: var(--navy-deep); color: #fff; padding: 56px 0; }
+    .area-grid { display: grid; grid-template-columns: auto 1fr auto; gap: 28px; align-items: center; }
+    .area-pin { width: 64px; height: 64px; border-radius: 50%; background: rgba(232,100,27,.15); color: var(--orange); display: grid; place-items: center; }
+    .area-pin .icon { width: 30px; height: 30px; }
+    .area h2 { font-size: 32px; text-transform: uppercase; margin-bottom: 6px; }
+    .area p { color: var(--on-navy); }
+
+    /* Contact */
+    .contact-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 56px; align-items: start; }
+    .contact-list { display: grid; gap: 14px; margin-top: 28px; }
+    .contact-item { display: flex; align-items: center; gap: 16px; padding: 16px 18px; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); text-decoration: none; }
+    a.contact-item:hover { border-color: var(--orange); }
+    .contact-item .icon { color: var(--orange); width: 22px; height: 22px; }
+    .contact-item small { display: block; font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: #6b7280; }
+    .contact-item strong { font-size: 17px; }
+    form { background: var(--card); border: 1px solid var(--line); border-top: 4px solid var(--orange); border-radius: var(--radius); padding: 30px; display: grid; gap: 16px; }
+    .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    label { display: block; font-size: 14px; font-weight: 700; margin-bottom: 6px; }
+    label .opt { font-weight: 500; color: #6b7280; }
+    input, select, textarea { width: 100%; font: inherit; font-size: 16px; color: var(--ink); background: #fbfaf7; border: 1px solid #cfc8b9; border-radius: var(--radius); padding: 12px 14px; }
+    input:focus, select:focus, textarea:focus { outline: none; border-color: var(--orange); box-shadow: 0 0 0 3px rgba(232,100,27,.18); background: #fff; }
+    textarea { resize: vertical; min-height: 110px; }
+    .hp { position: absolute; left: -9999px; }
+    form .btn { width: 100%; font-size: 19px; padding: 16px; }
+    .form-status { font-weight: 600; text-align: center; min-height: 1.6em; }
+    .form-status.ok { color: #2f7d3c; }
+    .form-status.err { color: #b42318; }
+    .fine { font-size: 13px; color: #6b7280; text-align: center; }
+
+    .faq-block { background: var(--card); border-top: 1px solid var(--line); }
+    .faq-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 56px; align-items: start; }
+    .faq details { border-top: 1px solid var(--line); }
+    .faq details:last-child { border-bottom: 1px solid var(--line); }
+    .faq summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 0; font-family: var(--head); font-size: 21px; font-weight: 600; }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq summary::after { content: "+"; font-family: var(--body); font-size: 26px; font-weight: 500; color: var(--orange); line-height: 1; transition: transform .2s; }
+    .faq details[open] summary::after { transform: rotate(45deg); }
+    .faq details p { color: var(--muted); padding: 0 40px 22px 0; }
+    .section-head a { color: var(--orange-dark); font-weight: 700; white-space: nowrap; }
+
+    footer { background: var(--navy-deep); color: #8fa0bb; padding: 40px 0 110px; font-size: 14px; }
+    .foot { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 18px; align-items: center; }
+    footer .brand-name { color: #fff; font-size: 18px; }
+    footer a { color: #fff; }
+
+    /* Mobile action bar */
+    .action-bar { position: fixed; z-index: 40; left: 0; right: 0; bottom: 0; display: none; grid-template-columns: 1fr 1fr 1fr; background: var(--navy); border-top: 3px solid var(--orange); padding-bottom: env(safe-area-inset-bottom); }
+    .action-bar a { display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 10px 0 11px; color: #fff; text-decoration: none; font-family: var(--head); font-size: 15px; letter-spacing: .04em; }
+    .action-bar a + a { border-left: 1px solid rgba(255,255,255,.12); }
+    .action-bar a.primary { background: var(--orange); }
+
+    @media (max-width: 960px) {
+      .nav-links a:not(.nav-call) { display: none; }
+      .hero { padding: 48px 0 64px; }
+      .hero-grid, .split, .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+      .svc-grid { grid-template-columns: 1fr; }
+      .faq-grid { grid-template-columns: 1fr; gap: 8px; }
+      .steps { grid-template-columns: 1fr; }
+      .step { border-right: 0; border-bottom: 1px solid var(--line); }
+      .step:last-child { border-bottom: 0; }
+      .area-grid { grid-template-columns: auto 1fr; }
+      .area-grid .btn { grid-column: 1 / -1; }
+    }
+    @media (max-width: 640px) {
+      body { font-size: 16px; }
+      section.block { padding: 64px 0; }
+      .brand-name { font-size: 18px; }
+      .nav-call span { display: none; }
+      .hero-ctas .btn { flex: 1 1 100%; }
+      .field-row { grid-template-columns: 1fr; }
+      form { padding: 22px; }
+      .action-bar { display: grid; }
+      .ticket .row { grid-template-columns: 92px 1fr; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-text" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4M16 13H8M16 17H8M10 9H8"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2M15 18H9M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></symbol>
+    <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+    <symbol id="i-gauge" viewBox="0 0 24 24"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></symbol>
+    <symbol id="i-disc" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></symbol>
+    <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5M9 18h6M10 22h4"/></symbol>
+    <symbol id="i-move" viewBox="0 0 24 24"><path d="M5 9l-3 3 3 3M9 5l3-3 3 3M15 19l-3 3-3-3M19 9l3 3-3 3M2 12h20M12 2v20"/></symbol>
+    <symbol id="i-clipboard" viewBox="0 0 24 24"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4M12 17h.01"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
+  </svg>
+
+  <div class="stripe" aria-hidden="true"></div>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#top" aria-label="Wisco Fleet Works home">
+        <svg width="38" height="38" viewBox="0 0 40 40" aria-hidden="true">
+          <path d="M4 26a16 16 0 0 1 32 0" fill="none" stroke="#e8641b" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="20" cy="26" r="9" fill="none" stroke="#fff" stroke-width="4" stroke-dasharray="3.4 3.67"/>
+          <circle cx="20" cy="26" r="6.5" fill="#fff"/>
+          <circle cx="20" cy="26" r="2.6" fill="#13233f"/>
+        </svg>
+        <span class="brand-name">Wisco <span>Fleet Works</span></span>
+      </a>
+      <nav class="nav-links" aria-label="Main">
+        <a href="#how">How it works</a>
+        <a href="#services">Services</a>
+        <a href="#vehicles">Vehicles</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-call" href="tel:+16088951054"><svg class="icon"><use href="#i-phone"/></svg><span>(608) 895-1054</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="label">Mobile fleet mechanic &middot; Madison area, WI</p>
+          <h1>We fix your vans <em>where they're parked.</em></h1>
+          <p class="hero-lede">On-site maintenance and repair for commercial vans and step vans. No towing, no shuttling drivers to a shop, and less time off the road.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="tel:+16088951054"><svg class="icon"><use href="#i-phone"/></svg>Call (608) 895-1054</a>
+            <a class="btn btn-ghost" href="sms:+16088951054"><svg class="icon"><use href="#i-text"/></svg>Text a photo of the problem</a>
+          </div>
+          <p class="hero-note">Need a quote for scheduled work instead? <a href="#contact">Send a request</a>.</p>
+        </div>
+
+        <aside class="ticket" aria-label="Service summary">
+          <div class="ticket-head">
+            <span class="label">Service ticket</span>
+            <span class="status" id="open-status"><span class="dot"></span><span id="open-text">Mon–Sun, 7 AM–11 PM</span></span>
+          </div>
+          <dl>
+            <div class="row"><dt>Vehicles</dt><dd>Step vans, cargo vans, light &amp; medium duty</dd></div>
+            <div class="row"><dt>Hours</dt><dd>Mon–Sun, 7 AM–11 PM</dd></div>
+            <div class="row"><dt>Area</dt><dd>Madison, Fitchburg &amp; DeForest</dd></div>
+            <div class="row"><dt>Paperwork</dt><dd>Written record for every unit</dd></div>
+          </dl>
+          <div class="ticket-foot">
+            <a class="btn btn-dark" href="#contact">Request service <svg class="icon"><use href="#i-arrow"/></svg></a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="block" id="how">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="label">How it works</p>
+          <h2>Downtime is lost revenue</h2>
+          <p>Instead of taking a van off the road for a day, we bring the tools to it.</p>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <h3>Call or text</h3>
+            <p>Tell us the unit, where it's parked, and what's wrong. A photo or code reading helps.</p>
+          </div>
+          <div class="step">
+            <h3>We come to you</h3>
+            <p>We diagnose and repair on site, and fix only what's needed. You'll know the cost before work starts.</p>
+          </div>
+          <div class="step">
+            <h3>You get the record</h3>
+            <p>Each vehicle gets a written invoice and service history for your fleet files.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="block services" id="services">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="label">Services</p>
+          <h2>What we handle on site</h2>
+          <p>Routine maintenance and the repairs that usually take a delivery van out of service.</p>
+        </div>
+        <div class="svc-grid">
+          <div class="svc"><div class="svc-icon"><svg class="icon"><use href="#i-clipboard"/></svg></div><div><h3>Preventive Maintenance</h3><p>Scheduled PMs that catch problems before they become breakdowns.</p></div></div>
+          <div class="svc"><div class="svc-icon"><svg class="icon"><use href="#i-drop"/></svg></div><div><h3>Oil &amp; Filters</h3><p>Oil changes and filter replacements without leaving your lot.</p></div></div>
+          <div class="svc"><div class="svc-icon"><svg class="icon"><use href="#i-disc"/></svg></div><div><h3>Brakes</h3><p>Pads, rotors, and calipers.</p></div></div>
+          <div class="svc"><div class="svc-icon"><svg class="icon"><use href="#i-bolt"/></svg></div><div><h3>Electrical Diagnostics</h3><p>Batteries, alternators, starters, and hard-to-find wiring faults.</p></div></div>
+          <div class="svc"><div class="svc-icon"><svg class="icon"><use href="#i-alert"/></svg></div><div><h3>Check Engine</h3><p>Code reading, diagnosis, and repair.</p></div></div>
+          <div class="svc"><div class="svc-icon"><svg class="icon"><use href="#i-move"/></svg></div><div><h3>Suspension &amp; Steering</h3><p>Struts, shocks, and steering components.</p></div></div>
+          <div class="svc"><div class="svc-icon"><svg class="icon"><use href="#i-bulb"/></svg></div><div><h3>Lighting &amp; LEDs</h3><p>Headlights, taillights, and cargo-area LED upgrades.</p></div></div>
+          <a class="svc svc-cta" href="sms:+16088951054"><div class="svc-icon"><svg class="icon"><use href="#i-text"/></svg></div><div><h3>Something else?</h3><p>Text us what's going on and we'll tell you if we can fix it on site.</p></div></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vehicles + Why -->
+    <section class="block" id="vehicles">
+      <div class="wrap split">
+        <div>
+          <div class="section-head" style="margin-bottom:28px">
+            <p class="label">Vehicles</p>
+            <h2>Built around delivery vans</h2>
+            <p>We know the common failure points of the vans that run last-mile and contractor routes.</p>
+          </div>
+          <div class="spec">
+            <div class="spec-head label">Vehicles we service</div>
+            <ul>
+              <li><svg class="icon"><use href="#i-truck"/></svg>Ford F53, F59 &amp; E-Series (E-350 / E-450)</li>
+              <li><svg class="icon"><use href="#i-truck"/></svg>Chevrolet Express / GMC Savana 3500 &amp; 4500</li>
+              <li><svg class="icon"><use href="#i-truck"/></svg>Freightliner step vans</li>
+              <li><svg class="icon"><use href="#i-truck"/></svg>Other light &amp; medium-duty fleet vehicles</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="section-head" style="margin-bottom:28px">
+            <p class="label">Why fleets call us</p>
+            <h2>Straight answers, on your schedule</h2>
+          </div>
+          <div class="why">
+            <div class="why-item"><svg class="icon"><use href="#i-pin"/></svg><div><h3>100% mobile</h3><p>We work at your lot or depot, including evenings and weekends, so vans are ready for the next route.</p></div></div>
+            <div class="why-item"><svg class="icon"><use href="#i-shield"/></svg><div><h3>Honest diagnostics</h3><p>We fix what's needed and don't upsell parts you don't need.</p></div></div>
+            <div class="why-item"><svg class="icon"><use href="#i-text"/></svg><div><h3>Clear communication</h3><p>You'll know the status of every unit and the cost before we start.</p></div></div>
+            <div class="why-item"><svg class="icon"><use href="#i-file"/></svg><div><h3>Organized records</h3><p>Digital invoices and service history for each vehicle.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service area -->
+    <section class="area" id="area">
+      <div class="wrap area-grid">
+        <div class="area-pin"><svg class="icon"><use href="#i-pin"/></svg></div>
+        <div>
+          <h2>Service area</h2>
+          <p>Serving fleets all over Madison, Fitchburg, and DeForest. Outside that area? Call us, since travel fees may apply depending on distance.</p>
+        </div>
+        <a class="btn btn-primary" href="tel:+16088951054"><svg class="icon"><use href="#i-phone"/></svg>Check your location</a>
+      </div>
+    </section>
+
+    <!-- Testimonials removed until real, attributable customer quotes are available. -->
+
+    <!-- FAQ -->
+    <section class="block faq-block" id="faq">
+      <div class="wrap faq-grid">
+        <div class="section-head">
+          <p class="label">Questions</p>
+          <h2>Before you call</h2>
+          <p>Don't see your question? Call or text <a href="tel:+16088951054">(608) 895-1054</a>.</p>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>Do I need to bring the van anywhere?</summary>
+            <p>No. We work at your lot, depot, or yard. Your vehicles stay where they are and your drivers stay on their routes.</p>
+          </details>
+          <details>
+            <summary>Do you work evenings and weekends?</summary>
+            <p>Yes. We're available 7 AM to 11 PM, seven days a week, so we can work on vans after routes end and have them ready the next morning.</p>
+          </details>
+          <details>
+            <summary>Where do you go?</summary>
+            <p>Madison, Fitchburg, and DeForest. If you're outside that area, call anyway. Travel fees may apply depending on distance.</p>
+          </details>
+          <details>
+            <summary>What should I send when I reach out?</summary>
+            <p>The vehicle (year, make, model), where it's parked, and what's going on. A photo, warning light, or code reading helps us show up with the right parts.</p>
+          </details>
+          <details>
+            <summary>Will I know the price before you start?</summary>
+            <p>Yes. We tell you what's needed and what it costs before we do the work. Quotes are estimates, since some repairs depend on what we find and on parts availability.</p>
+          </details>
+          <details>
+            <summary>Do you keep records for our fleet?</summary>
+            <p>Yes. Every vehicle gets a written invoice and service history you can keep for your fleet files.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="block" id="contact">
+      <div class="wrap contact-grid">
+        <div>
+          <div class="section-head" style="margin-bottom:0">
+            <p class="label">Request service</p>
+            <h2>Get a van back on the road</h2>
+            <p>For a breakdown or anything urgent, call. For scheduled work or a fleet quote, use the form and we'll get back to you.</p>
+          </div>
+          <div class="contact-list">
+            <a class="contact-item" href="tel:+16088951054"><svg class="icon"><use href="#i-phone"/></svg><span><small>Call</small><strong>(608) 895-1054</strong></span></a>
+            <a class="contact-item" href="sms:+16088951054"><svg class="icon"><use href="#i-text"/></svg><span><small>Text</small><strong>(608) 895-1054</strong></span></a>
+            <a class="contact-item" href="mailto:wiscofleetworks@gmail.com"><svg class="icon"><use href="#i-mail"/></svg><span><small>Email</small><strong>wiscofleetworks@gmail.com</strong></span></a>
+            <div class="contact-item"><svg class="icon"><use href="#i-clock"/></svg><span><small>Hours</small><strong>Mon–Sun, 7 AM–11 PM</strong></span></div>
+          </div>
+        </div>
+
+        <form id="quote-form" novalidate>
+          <div class="field-row">
+            <div><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" required></div>
+            <div><label for="f-company">Company <span class="opt">(optional)</span></label><input id="f-company" name="company" autocomplete="organization"></div>
+          </div>
+          <div class="field-row">
+            <div><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+            <div><label for="f-email">Email <span class="opt">(optional)</span></label><input id="f-email" name="email" type="email" autocomplete="email"></div>
+          </div>
+          <div class="field-row">
+            <div>
+              <label for="f-size">Fleet size</label>
+              <select id="f-size" name="fleet_size">
+                <option value="">Select…</option>
+                <option>1–5 vehicles</option>
+                <option>6–20 vehicles</option>
+                <option>21–50 vehicles</option>
+                <option>51+ vehicles</option>
+              </select>
+            </div>
+            <div><label for="f-vehicle">Vehicle(s)</label><input id="f-vehicle" name="vehicle" placeholder="e.g. 2019 Ford E-450 step van"></div>
+          </div>
+          <div class="field-row">
+            <div><label for="f-location">Where are the vehicles?</label><input id="f-location" name="location" placeholder="City or address of lot"></div>
+            <div><label for="f-date">Preferred date <span class="opt">(optional)</span></label><input id="f-date" name="preferred_date" type="date"></div>
+          </div>
+          <div>
+            <label for="f-service">What do you need?</label>
+            <textarea id="f-service" name="service" required placeholder="Describe the problem, warning lights, codes, or maintenance needed"></textarea>
+          </div>
+          <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="btn btn-primary" type="submit" id="f-submit">Send request</button>
+          <p class="form-status" id="f-status" role="status" aria-live="polite"></p>
+          <p class="fine">All work is subject to inspection and parts availability. Quotes are estimates.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <span class="brand-name">Wisco <span style="color:var(--orange)">Fleet Works</span> LLC</span>
+      <span>Mobile fleet maintenance &amp; repair &middot; Madison, Fitchburg &amp; DeForest, WI &middot; <a href="tel:+16088951054">(608) 895-1054</a></span>
+      <span>&copy; <span id="year">2026</span> Wisco Fleet Works LLC</span>
+    </div>
+  </footer>
+
+  <nav class="action-bar" aria-label="Quick contact">
+    <a class="primary" href="tel:+16088951054"><svg class="icon"><use href="#i-phone"/></svg>Call</a>
+    <a href="sms:+16088951054"><svg class="icon"><use href="#i-text"/></svg>Text</a>
+    <a href="#contact"><svg class="icon"><use href="#i-file"/></svg>Quote</a>
+  </nav>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Live "open now" status, based on Madison time (7 AM–11 PM, every day).
+    (function () {
+      try {
+        const hour = Number(new Intl.DateTimeFormat('en-US', { timeZone: 'America/Chicago', hour: 'numeric', hourCycle: 'h23' }).format(new Date()));
+        const open = hour >= 7 && hour < 23;
+        const el = document.getElementById('open-status');
+        document.getElementById('open-text').textContent = open ? 'Taking calls now' : 'Closed · opens 7 AM';
+        if (!open) el.classList.add('closed');
+      } catch (e) { /* keep the static hours text */ }
+    })();
+
+    // Paste the Formspree endpoint here once the form is created (e.g. 'https://formspree.io/f/abcdwxyz').
+    // Until then, the form opens the visitor's email app with the request pre-filled, so no lead is lost.
+    const FORMSPREE_ENDPOINT = '';
+    const BUSINESS_EMAIL = 'wiscofleetworks@gmail.com';
+
+    const form = document.getElementById('quote-form');
+    const statusEl = document.getElementById('f-status');
+    const submitBtn = document.getElementById('f-submit');
+
+    function setStatus(msg, kind) {
+      statusEl.textContent = msg;
+      statusEl.className = 'form-status ' + (kind || '');
+    }
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      if (!form.checkValidity()) {
+        const firstBad = form.querySelector(':invalid');
+        setStatus('Please fill in your name, phone, and what you need.', 'err');
+        if (firstBad) firstBad.focus();
+        return;
+      }
+      const data = new FormData(form);
+      if (data.get('_gotcha')) return;
+
+      if (!FORMSPREE_ENDPOINT) {
+        const lines = [];
+        for (const [k, v] of data.entries()) if (k !== '_gotcha' && v) lines.push(`${k.replace('_', ' ')}: ${v}`);
+        const subject = `Service request from ${data.get('name')}${data.get('company') ? ' (' + data.get('company') + ')' : ''}`;
+        window.location.href = `mailto:${BUSINESS_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(lines.join('\n'))}`;
+        setStatus('Your email app should open with the request filled in. Just hit send, or call us at (608) 895-1054.', 'ok');
+        return;
+      }
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending…';
+      try {
+        const res = await fetch(FORMSPREE_ENDPOINT, { method: 'POST', body: data, headers: { Accept: 'application/json' } });
+        if (!res.ok) throw new Error('bad status');
+        form.reset();
+        setStatus("Request received. We'll get back to you shortly. For anything urgent, call (608) 895-1054.", 'ok');
+      } catch {
+        setStatus("That didn't go through. Please call or text (608) 895-1054.", 'err');
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Send request';
+      }
+    });
+  </script>
+</body>
+</html>
